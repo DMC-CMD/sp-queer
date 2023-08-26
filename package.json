@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prod": "GENERATE_SOURCEMAP=false react-scripts build --production && serve -s build -l 8080",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
