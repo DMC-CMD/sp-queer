@@ -1,8 +1,8 @@
 import {
-  Container2,
-  H1,
-  H2,
-  PersonList,
+    Container2,
+    H1,
+    H2,
+    PersonList,
 } from "../../components/CommonComponents";
 import { Person } from "./Person";
 
@@ -17,7 +17,7 @@ import JanMüller from "../../media/zurich/08_Jan_Mueller.jpg";
 import ClaudiaRohr from "../../media/zurich/09_Claudia_Rohr.jpg";
 import MaxTöpfer from "../../media/zurich/10_Max Toepfer.jpg";
 import MarcEggenberger from "../../media/zurich/11_Marc_Eggenberger.jpg";
-import JoëlleJäger from "../../media/zurich/12_Joëlle_Jaeger.jpg";
+import JoëlleJäger from "../../media/zurich/12_Joelle_Jaeger.jpg";
 import FlorinSchütz from "../../media/zurich/13_Florin_Schuetz.jpg";
 import JoySchuurmans from "../../media/zurich/14_Joy_Schuurmans_Stekhoven.jpg";
 import MarcelHagemann from "../../media/zurich/15_Marcel_Hagemann.jpg";
@@ -44,231 +44,231 @@ import MartinNaef from "../../media/zurich/35_Martin_Naef.jpg";
 import candidatesType from "../../../types/candidates";
 
 const candidates: candidatesType = [
-  {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
-  },
-  {
-    name: "Max Kranich",
-    role: "Buchhalter, Co-Präsident SP Queer",
-    city: "Zürich",
-    img: MaxKranich,
-  },
-  {
-    name: "Ray Belle Djuric",
-    role: "Dragqueen, Pädagog*in",
-    city: "Uster",
-    img: RayBelleDjuric,
-  },
-  {
-    name: "Hannah Pfalzgraf",
-    role: "Hebamme i.A., Kantonsrätin",
-    city: "Mettmenstetten",
-    img: HannahPfalzgraf,
-  },
-  {
-    name: "Luca Dahinden",
-    role: "Geschäftsführer NGO, Community Health Worker",
-    city: "Zürich",
-    img: LucaDahinden,
-  },
-  {
-    name: "Liam Bohner",
-    role: "Geschäftsführende Person HAZ-Queer Zürich",
-    city: "Zürich",
-    img: LiamBohner,
-  },
-  {
-    name: "Selina Villiger",
-    role: "Communications Manager, Betriebsökonomin FH",
-    city: "Zürich",
-    img: SelinaVilliger,
-  },
-  {
-    name: "Jan Müller",
-    role: "Leiter Kommunikations Aids-Hilfe Schweiz",
-    city: "Zürich",
-    img: JanMüller,
-  },
-  {
-    name: "Claudia Rohr",
-    role: "Redaktion/Herausgeberin Kulturmagazin, dipl. Gerontologin",
-    city: "Zürich",
-    img: ClaudiaRohr,
-  },
-  {
-    name: "Max Töper",
-    role: "Parteisekretär, Gemeinderat",
-    city: "Kloten",
-    img: MaxTöpfer,
-  },
-  {
-    name: "Marc Eggenberger",
-    role: "Politolog*in, Gesundheitskommunikator*in",
-    city: "Zürich",
-    img: MarcEggenberger,
-  },
-  {
-    name: "Joëlle Jäger",
-    role: "Museumsaufsicht, angehende Archäologin",
-    city: "Wädenswil",
-    img: JoëlleJäger,
-  },
-  {
-    name: "Florin Schütz",
-    role: "Historiker, Projektleiter Kampagnen",
-    city: "Zürich",
-    img: FlorinSchütz,
-  },
-  {
-    name: "Joy Schuurmans Stekhoven",
-    role: "Elektroingenieurin ETH",
-    city: "Zürich",
-    img: JoySchuurmans,
-  },
-  {
-    name: "Marcel Hagemann",
-    role: "MA Soziologie und Politikwissenschaft, Bankangestellter",
-    city: "Winterthur",
-    img: MarcelHagemann,
-  },
-  {
-    name: "Barbara Spririg",
-    role: "Kampagnenleiterin",
-    city: "Zürich",
-    img: BarbaraSpirig,
-  },
-  {
-    name: "Oliver Heimgartner",
-    role: "Projektleiter, Co-Präsident SP Stadt Zürich",
-    city: "Zürich",
-    img: OliverHeimgarnter,
-  },
-  {
-    name: "Noa Huber",
-    role: "Gastromitarbeiter*in",
-    city: "Zürich",
-    img: NoahHuber,
-  },
-  {
-    name: "Michi Rüegg",
-    role: "Autor, Dozent, Berater",
-    city: "Zürich",
-    img: MichiRüegg,
-  },
-  {
-    name: "Aina Weber",
-    role: "Leiterin Kommunikation & Fundraising, Soziologin",
-    city: "Winterthur",
-    img: AinaWeber,
-  },
-  {
-    name: "Dominic Tobler",
-    role: "Student Informatik",
-    city: "Zollikon",
-    img: DominicTobler,
-  },
-  {
-    name: "Andrea Simonett",
-    role: "Kaufmännischer Mitarbeiter",
-    city: "Chur",
-    img: AndreaSimonett,
-  },
-  {
-    name: "Laure Stadler",
-    role: "Hea Open Government Data Kanton Zürich",
-    city: "Zürich",
-    img: LaureStadler,
-  },
-  {
-    name: "Tobias Urech",
-    role: "Historiker, Dragqueen",
-    city: "Zürich",
-    img: TobiasUrech,
-  },
-  {
-    name: "Alexander Robert Herren",
-    role: "Indogermanist, Doktorand Altalbanisch",
-    city: "Zürich",
-    img: AlexanderHerren,
-  },
-  {
-    name: "Carmen Jeanguenat",
-    role: "Kommunikation und Kampganen, angehen Politikwissenschaftlerin",
-    city: "Zürich",
-    img: CarmenJeanguenat,
-  },
-  {
-    name: "Karl Scheuber",
-    role: "Musiker, Dirigent",
-    city: "Zürich",
-    img: KarlScheuber,
-  },
-  {
-    name: "Lea Estermann",
-    role: "Relegionswissenschaftlerin BA, Sozialpädagogin i.A.",
-    city: "Zürich",
-    img: LeaEstermann,
-  },
-  {
-    name: "Nicola Andrea Jarkovich",
-    role: "Student Soziale Arbeit",
-    city: "Hinwil",
-    img: NicolaJarkovich,
-  },
-  {
-    name: "Ananda Kurth",
-    role: "Studium Msc Bioinformatik",
-    city: "Wetzikon",
-    img: AnandaKurth,
-  },
-  {
-    name: "Jean-Marc von Mentlen",
-    role: "Msc ETH, Batterieforscher",
-    city: "Urdorf",
-    img: JeanMarcMentlen,
-  },
-  {
-    name: "Stella Jegher",
-    role: "Dipl. Übersetzerin, Menschenrechts- und Umweltaktivistin",
-    city: "Zürich",
-    img: StellaJegher,
-  },
-  {
-    name: "Dominik Steinacher",
-    role: "Jurist",
-    city: "Zürich",
-    img: DominikSteinacher,
-  },
-  {
-    name: "Giulia Haller",
-    role: "Lehrperson, Vorstand HAZ",
-    city: "Zürich",
-    img: GiuliaHaller,
-  },
-  {
-    name: "Martin Naef",
-    role: "Jurist",
-    city: "Zurich",
-    img: MartinNaef,
-  },
+    {
+        name: "Anna Graff",
+        role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
+        city: "Zürich",
+        img: AnnaGraff,
+    },
+    {
+        name: "Max Kranich",
+        role: "Buchhalter, Co-Präsident SP Queer",
+        city: "Zürich",
+        img: MaxKranich,
+    },
+    {
+        name: "Ray Belle Djuric",
+        role: "Dragqueen, Pädagog*in",
+        city: "Uster",
+        img: RayBelleDjuric,
+    },
+    {
+        name: "Hannah Pfalzgraf",
+        role: "Hebamme i.A., Kantonsrätin",
+        city: "Mettmenstetten",
+        img: HannahPfalzgraf,
+    },
+    {
+        name: "Luca Dahinden",
+        role: "Geschäftsführer NGO, Community Health Worker",
+        city: "Zürich",
+        img: LucaDahinden,
+    },
+    {
+        name: "Liam Bohner",
+        role: "Geschäftsführende Person HAZ-Queer Zürich",
+        city: "Zürich",
+        img: LiamBohner,
+    },
+    {
+        name: "Selina Villiger",
+        role: "Communications Manager, Betriebsökonomin FH",
+        city: "Zürich",
+        img: SelinaVilliger,
+    },
+    {
+        name: "Jan Müller",
+        role: "Leiter Kommunikations Aids-Hilfe Schweiz",
+        city: "Zürich",
+        img: JanMüller,
+    },
+    {
+        name: "Claudia Rohr",
+        role: "Redaktion/Herausgeberin Kulturmagazin, dipl. Gerontologin",
+        city: "Zürich",
+        img: ClaudiaRohr,
+    },
+    {
+        name: "Max Töper",
+        role: "Parteisekretär, Gemeinderat",
+        city: "Kloten",
+        img: MaxTöpfer,
+    },
+    {
+        name: "Marc Eggenberger",
+        role: "Politolog*in, Gesundheitskommunikator*in",
+        city: "Zürich",
+        img: MarcEggenberger,
+    },
+    {
+        name: "Joëlle Jäger",
+        role: "Museumsaufsicht, angehende Archäologin",
+        city: "Wädenswil",
+        img: JoëlleJäger,
+    },
+    {
+        name: "Florin Schütz",
+        role: "Historiker, Projektleiter Kampagnen",
+        city: "Zürich",
+        img: FlorinSchütz,
+    },
+    {
+        name: "Joy Schuurmans Stekhoven",
+        role: "Elektroingenieurin ETH",
+        city: "Zürich",
+        img: JoySchuurmans,
+    },
+    {
+        name: "Marcel Hagemann",
+        role: "MA Soziologie und Politikwissenschaft, Bankangestellter",
+        city: "Winterthur",
+        img: MarcelHagemann,
+    },
+    {
+        name: "Barbara Spririg",
+        role: "Kampagnenleiterin",
+        city: "Zürich",
+        img: BarbaraSpirig,
+    },
+    {
+        name: "Oliver Heimgartner",
+        role: "Projektleiter, Co-Präsident SP Stadt Zürich",
+        city: "Zürich",
+        img: OliverHeimgarnter,
+    },
+    {
+        name: "Noa Huber",
+        role: "Gastromitarbeiter*in",
+        city: "Zürich",
+        img: NoahHuber,
+    },
+    {
+        name: "Michi Rüegg",
+        role: "Autor, Dozent, Berater",
+        city: "Zürich",
+        img: MichiRüegg,
+    },
+    {
+        name: "Aina Weber",
+        role: "Leiterin Kommunikation & Fundraising, Soziologin",
+        city: "Winterthur",
+        img: AinaWeber,
+    },
+    {
+        name: "Dominic Tobler",
+        role: "Student Informatik",
+        city: "Zollikon",
+        img: DominicTobler,
+    },
+    {
+        name: "Andrea Simonett",
+        role: "Kaufmännischer Mitarbeiter",
+        city: "Chur",
+        img: AndreaSimonett,
+    },
+    {
+        name: "Laure Stadler",
+        role: "Hea Open Government Data Kanton Zürich",
+        city: "Zürich",
+        img: LaureStadler,
+    },
+    {
+        name: "Tobias Urech",
+        role: "Historiker, Dragqueen",
+        city: "Zürich",
+        img: TobiasUrech,
+    },
+    {
+        name: "Alexander Robert Herren",
+        role: "Indogermanist, Doktorand Altalbanisch",
+        city: "Zürich",
+        img: AlexanderHerren,
+    },
+    {
+        name: "Carmen Jeanguenat",
+        role: "Kommunikation und Kampganen, angehen Politikwissenschaftlerin",
+        city: "Zürich",
+        img: CarmenJeanguenat,
+    },
+    {
+        name: "Karl Scheuber",
+        role: "Musiker, Dirigent",
+        city: "Zürich",
+        img: KarlScheuber,
+    },
+    {
+        name: "Lea Estermann",
+        role: "Relegionswissenschaftlerin BA, Sozialpädagogin i.A.",
+        city: "Zürich",
+        img: LeaEstermann,
+    },
+    {
+        name: "Nicola Andrea Jarkovich",
+        role: "Student Soziale Arbeit",
+        city: "Hinwil",
+        img: NicolaJarkovich,
+    },
+    {
+        name: "Ananda Kurth",
+        role: "Studium Msc Bioinformatik",
+        city: "Wetzikon",
+        img: AnandaKurth,
+    },
+    {
+        name: "Jean-Marc von Mentlen",
+        role: "Msc ETH, Batterieforscher",
+        city: "Urdorf",
+        img: JeanMarcMentlen,
+    },
+    {
+        name: "Stella Jegher",
+        role: "Dipl. Übersetzerin, Menschenrechts- und Umweltaktivistin",
+        city: "Zürich",
+        img: StellaJegher,
+    },
+    {
+        name: "Dominik Steinacher",
+        role: "Jurist",
+        city: "Zürich",
+        img: DominikSteinacher,
+    },
+    {
+        name: "Giulia Haller",
+        role: "Lehrperson, Vorstand HAZ",
+        city: "Zürich",
+        img: GiuliaHaller,
+    },
+    {
+        name: "Martin Naef",
+        role: "Jurist",
+        city: "Zurich",
+        img: MartinNaef,
+    },
 ];
 
 export const Zurich = () => {
-  return (
-    <div>
-      <H1>Zürich</H1>
-      <H2>Liste 27</H2>
+    return (
+        <div>
+            <H1>Zürich</H1>
+            <H2>Liste 27</H2>
 
-      <Container2>
-        <PersonList>
-          {candidates.map((c) => (
-            <Person data={c} />
-          ))}
-        </PersonList>
-      </Container2>
-    </div>
-  );
+            <Container2>
+                <PersonList>
+                    {candidates.map((c) => (
+                        <Person data={c} />
+                    ))}
+                </PersonList>
+            </Container2>
+        </div>
+    );
 };
