@@ -88,7 +88,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Jan Müller",
-    role: "Leiter Kommunikations Aids-Hilfe Schweiz",
+    role: "Leiter Kommunikation Aids-Hilfe Schweiz",
     city: "Zürich",
     img: JanMüller,
   },
@@ -99,7 +99,7 @@ const candidates: candidatesType = [
     img: ClaudiaRohr,
   },
   {
-    name: "Max Töper",
+    name: "Max Töpfer",
     role: "Parteisekretär, Gemeinderat",
     city: "Kloten",
     img: MaxTöpfer,
@@ -178,7 +178,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Laure Stadler",
-    role: "Hea Open Government Data Kanton Zürich",
+    role: "Head Open Government Data Kanton Zürich",
     city: "Zürich",
     img: LaureStadler,
   },
@@ -196,7 +196,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Carmen Jeanguenat",
-    role: "Kommunikation und Kampganen, angehen Politikwissenschaftlerin",
+    role: "Kommunikation und Kampagnen, angehende Politikwissenschaftlerin",
     city: "Zürich",
     img: CarmenJeanguenat,
   },
