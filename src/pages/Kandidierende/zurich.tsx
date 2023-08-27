@@ -13,18 +13,18 @@ import HannahPfalzgraf from "../../media/zurich/04_Hannah_Pfalzgraf.jpg";
 import LucaDahinden from "../../media/zurich/05_Luca_Dahinden.jpg";
 import LiamBohner from "../../media/zurich/06_Liam_Bohner.jpg";
 import SelinaVilliger from "../../media/zurich/07_Selina_Villiger.jpg";
-import JanMüller from "../../media/zurich/08_Jan_Müller.jpg";
+import JanMüller from "../../media/zurich/08_Jan_Mueller.jpg";
 import ClaudiaRohr from "../../media/zurich/09_Claudia_Rohr.jpg";
-import MaxTöpfer from "../../media/zurich/10_Max Töpfer.jpg";
+import MaxTöpfer from "../../media/zurich/10_Max Toepfer.jpg";
 import MarcEggenberger from "../../media/zurich/11_Marc_Eggenberger.jpg";
-import JoëlleJäger from "../../media/zurich/12_Joëlle_Jäger.jpg";
-import FlorinSchütz from "../../media/zurich/13_Florin_Schütz.jpg";
+import JoëlleJäger from "../../media/zurich/12_Joelle_Jaeger.jpg";
+import FlorinSchütz from "../../media/zurich/13_Florin_Schuetz.jpg";
 import JoySchuurmans from "../../media/zurich/14_Joy_Schuurmans_Stekhoven.jpg";
 import MarcelHagemann from "../../media/zurich/15_Marcel_Hagemann.jpg";
 import BarbaraSpirig from "../../media/zurich/16_Barbara_Spirig.jpg";
 import OliverHeimgarnter from "../../media/zurich/17_Oliver_Heimgartner.jpg";
 import NoahHuber from "../../media/zurich/18_Noa_Huber.jpg";
-import MichiRüegg from "../../media/zurich/19_Michi_Rüegg.jpg";
+import MichiRüegg from "../../media/zurich/19_Michi_Rueegg.jpg";
 import AinaWeber from "../../media/zurich/20_Aina_Waeber.jpg";
 import DominicTobler from "../../media/zurich/21_Dominic_Tobler.jpg";
 import AndreaSimonett from "../../media/zurich/22_Andrea_Simonett.jpg";
@@ -88,7 +88,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Jan Müller",
-    role: "Leiter Kommunikation Aids-Hilfe Schweiz",
+    role: "Leiter Kommunikations Aids-Hilfe Schweiz",
     city: "Zürich",
     img: JanMüller,
   },
@@ -99,7 +99,7 @@ const candidates: candidatesType = [
     img: ClaudiaRohr,
   },
   {
-    name: "Max Töpfer",
+    name: "Max Töper",
     role: "Parteisekretär, Gemeinderat",
     city: "Kloten",
     img: MaxTöpfer,
@@ -178,7 +178,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Laure Stadler",
-    role: "Head Open Government Data Kanton Zürich",
+    role: "Hea Open Government Data Kanton Zürich",
     city: "Zürich",
     img: LaureStadler,
   },
@@ -196,7 +196,7 @@ const candidates: candidatesType = [
   },
   {
     name: "Carmen Jeanguenat",
-    role: "Kommunikation und Kampagnen, angehende Politikwissenschaftlerin",
+    role: "Kommunikation und Kampganen, angehen Politikwissenschaftlerin",
     city: "Zürich",
     img: CarmenJeanguenat,
   },
