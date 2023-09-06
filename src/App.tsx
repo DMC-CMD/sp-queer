@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { Zurich } from "./pages/Kandidierende/zurich";
 import { Aargau } from "./pages/Kandidierende/Aargau";
 import { Bern } from "./pages/Kandidierende/Bern";
+import { ZurichSpenden } from "./pages/Kandidierende/ZuerichSpenden";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/aargau" element={<Aargau />} />
         <Route path="/bern" element={<Bern />} />
         <Route path="/zuerich" element={<Zurich />} />
+        <Route path="/zuerich/spenden" element={<ZurichSpenden />} />
       </Routes>
       <Footer />
     </BrowserRouter>
