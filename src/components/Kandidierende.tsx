@@ -40,8 +40,8 @@ export const Kandidierende = (props: { isFrench: boolean }) => {
       <H1>{isFrench ? "Candidat.e.s" : "Kandidierende"}</H1>
       <Container>
         <List>
-          {cantons.map((c) => (
-            <CantonBox>
+          {cantons.map((c, ind) => (
+            <CantonBox key={ind}>
               <div>
                 <A to={c.target}>{c.name}</A>
               </div>

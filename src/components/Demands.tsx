@@ -55,6 +55,7 @@ export const Demands = (props: { isFrench: boolean }) => {
         text={isFrench ? demands[2].textFr : demands[2].textDe}
         buttonLink={isFrench ? "/demandes" : "/forderungen"}
         isFrench={isFrench}
+        last
       />
     </section>
   );
