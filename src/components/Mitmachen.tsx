@@ -16,28 +16,41 @@ const LinkStyled = styled(Link)`
   }
 `;
 
-export const Mitmachen = () => {
+export const Mitmachen = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
   return (
     <div>
-      <H1>Mitmachen</H1>
+      <H1>{isFrench ? "Participer" : "Mitmachen"}</H1>
       <Container>
-        <H2>Zürich</H2>
+        <H2>{isFrench ? "Zurich" : "Zürich"}</H2>
         <ButtonBox>
-          <Button>
-            <LinkStyled to="/zuerich/spenden">Spenden</LinkStyled>
+          <Button href="https://spzuerich.ch/spenden/spqueer/" target="_blank">
+            {isFrench ? "Donation" : "Spenden"}
           </Button>
           <Button
             href="https://spzuerich.ch/mitmachen/basiskampagne-nationale-wahlen-2023/"
             target="_blank"
           >
-            Basiskampagne
+            {isFrench ? "Campagne de base" : "Basiskampagne"}
           </Button>
         </ButtonBox>
 
         <H2>National</H2>
         <ButtonBox>
-          <Button href="https://www.sp-ps.ch/mitmachen-queer/" target="_blank">
-            Mitglied werden
+          <Button>
+            <LinkStyled to={isFrench ? "/donation" : "/spenden"}>
+              {isFrench ? "Donation" : "Spenden"}
+            </LinkStyled>
+          </Button>
+          <Button
+            href={
+              isFrench
+                ? "https://www.sp-ps.ch/fr/sengager-queer/"
+                : "https://www.sp-ps.ch/mitmachen-queer/"
+            }
+            target="_blank"
+          >
+            {isFrench ? "Devenir membre" : "Mitglied werden"}
           </Button>
         </ButtonBox>
       </Container>

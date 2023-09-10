@@ -8,14 +8,20 @@ const Hr = styled(H)`
   margin: 0;
   margin-top: 60px;
 `;
-export const Home = () => {
+export const Home = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
+
   return (
     <>
       <div id="home">
-        <H1>Queers in den Nationalrat!</H1>
+        <H1>
+          {isFrench
+            ? "Queers au Conseil national!"
+            : "Queers in den Nationalrat!"}
+        </H1>
 
         <Container>
-          <Demands />
+          <Demands isFrench={isFrench} />
         </Container>
       </div>
 
@@ -23,16 +29,16 @@ export const Home = () => {
         <Hr />
       </Container>
 
-      <div id="kandidierende">
-        <Kandidierende />
+      <div id={isFrench ? "candidat.e.s" : "kandidierende"}>
+        <Kandidierende isFrench={isFrench} />
       </div>
 
       <Container>
         <Hr />
       </Container>
 
-      <div id="mitmachen">
-        <Mitmachen />
+      <div id={isFrench ? "participer" : "mitmachen"}>
+        <Mitmachen isFrench={isFrench} />
       </div>
     </>
   );

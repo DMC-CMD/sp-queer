@@ -12,10 +12,11 @@ const DemandText = styled.p`
   text-align: left;
 `;
 
-export const Forderungen = () => {
+export const Forderungen = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
   return (
     <div>
-      <H1>Forderungen</H1>
+      <H1>{isFrench ? "Demandes" : "Forderungen"}</H1>
       <MediumContainer>
         <div>
           <H2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</H2>

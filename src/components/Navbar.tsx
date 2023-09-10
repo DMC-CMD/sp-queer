@@ -13,23 +13,64 @@ const DesktopNavbar = styled.nav`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 780px) {
+    padding: 0 5px;
+  }
+
   @media (max-width: 600px) {
     display: none;
   }
 `;
 const SpLogo = styled.img`
-  height: 80px;
+  height: 85px;
   transition: all 300ms;
 
   &:hover {
     transform: scale(1.1);
   }
+  @media (max-width: 700px) {
+    height: 60px;
+  }
+  @media (max-width: 600px) {
+    height: 85px;
+  }
+`;
+const Right = styled.div`
+  display: flex;
 `;
 const Links = styled.ul``;
 
+const Language = styled.div`
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+`;
+const LangOption = styled.a`
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 4px 8px;
+  margin-left: 10px;
+  font-size: 18px;
+  transition: all 300ms;
+
+  &:hover {
+    color: #ef199a;
+    background-color: white;
+  }
+`;
 const A = styled(Link)`
   font-size: 32px;
   margin: 0 12px;
+
+  @media (max-width: 875px) {
+    margin: 0;
+  }
+
+  @media (max-width: 780px) {
+    font-size: 24px;
+  }
 `;
 
 const HrDesktop = styled.hr`
@@ -83,13 +124,33 @@ const MobileLink = styled(Link)`
     font-size: 40px;
   }
 `;
+const MobileLangBox = styled.div`
+  margin-top: 22px;
+`;
+const MobileLangOption = styled.a`
+  color: white;
+  border: 2px solid white;
+  padding: 8px 16px;
+  font-size: 28px;
+  margin: 8px;
+
+  text-decoration: none;
+  transition: all 300ms;
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ef199a;
+  }
+`;
 
 const MenuBars = styled.img`
   width: 80px;
   padding: 12px;
+  transition: all 300ms;
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
   }
 
   @media (min-width: 601px) {
@@ -100,6 +161,12 @@ const CloseBox = styled.div`
   position: absolute;
   top: 50px;
   right: 0;
+  transition: all 300ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 `;
 const CloseIcon = styled.img`
   width: 80px;
@@ -126,7 +193,8 @@ const HrMobile = styled.hr`
   }
 `;
 
-export const Navbar = () => {
+export const Navbar = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
@@ -135,15 +203,23 @@ export const Navbar = () => {
         <RouterLink to="/">
           <SpLogo src={SpQueerLogo} />
         </RouterLink>
-        <Links>
-          <A to="/forderungen">Forderungen</A>
-          <A smooth to="/#kandidierende">
-            Kandidierende
-          </A>
-          <A smooth to="/#mitmachen">
-            Mitmachen
-          </A>
-        </Links>
+        <Right>
+          <Links>
+            <A to={isFrench ? "/demandes" : "/forderungen"}>
+              {isFrench ? "Demandes" : "Forderungen"}
+            </A>
+            <A smooth to={isFrench ? "/#candidat.e.s" : "/#kandidierende"}>
+              {isFrench ? "Candidat.e.s" : "Kandidierende"}
+            </A>
+            <A smooth to={isFrench ? "/#participer" : "/#mitmachen"}>
+              {isFrench ? "Participer" : "Mitmachen"}
+            </A>
+          </Links>
+          <Language>
+            <LangOption href="https://queer-waehlen.ch/">DE</LangOption>
+            <LangOption href="https://vote-queer.ch/">FR</LangOption>
+          </Language>
+        </Right>
       </DesktopNavbar>
 
       <HrDesktop />
@@ -170,16 +246,36 @@ export const Navbar = () => {
                 </MobileLink>
               </div>
               <div>
-                <MobileLink smooth to="/forderungen">
-                  Forderungen
+                <MobileLink smooth to={isFrench ? "/demandes" : "/forderungen"}>
+                  {isFrench ? "Demandes" : "Forderungen"}
                 </MobileLink>
               </div>
               <div>
-                <MobileLink smooth to="kandidierende">
-                  Kandidierende
+                <MobileLink
+                  smooth
+                  to={isFrench ? "candidat.e.s" : "kandidierende"}
+                >
+                  {isFrench ? "Candidat.e.s" : "Kandidierende"}
                 </MobileLink>
               </div>
+              <div>
+                <MobileLink
+                  smooth
+                  to={isFrench ? "/#participer" : "/#mitmachen"}
+                >
+                  {isFrench ? "Participer" : "Mitmachen"}
+                </MobileLink>
+              </div>
+              <MobileLangBox>
+                <MobileLangOption href="https://queer-waehlen.ch/">
+                  DE
+                </MobileLangOption>
+                <MobileLangOption href="https://vote-queer.ch/">
+                  FR
+                </MobileLangOption>
+              </MobileLangBox>
             </MobileLinks>
+
             <HrMobile />
           </MobileNavbar>
         ) : (

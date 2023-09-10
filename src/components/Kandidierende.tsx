@@ -22,21 +22,22 @@ const P = styled.p`
 const cantons = [
   {
     name: "Aargau",
-    target: "/aargau",
+    target: "/aargau#",
     text: "Liste XY",
   },
-  { name: "Bern", target: "/bern", text: "Liste XY" },
+  { name: "Bern", target: "/bern#", text: "Liste XY" },
   {
     name: "Zürich",
-    target: "/zuerich",
+    target: "/zuerich#",
     text: "Liste 27",
   },
 ];
 
-export const Kandidierende = () => {
+export const Kandidierende = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
   return (
     <div>
-      <H1>Kandidierende</H1>
+      <H1>{isFrench ? "Candidat.e.s" : "Kandidierende"}</H1>
       <Container>
         <List>
           {cantons.map((c) => (

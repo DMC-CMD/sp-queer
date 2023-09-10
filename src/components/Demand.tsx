@@ -25,13 +25,14 @@ export const Demand = (props: {
   text: string;
   buttonLink: string;
   last?: boolean;
+  isFrench: boolean;
 }) => {
-  const { title, text, buttonLink, last } = props;
+  const { title, text, buttonLink, last, isFrench } = props;
   return (
     <Content>
       <H2>{title}</H2>
       <DemandText>{text}</DemandText>
-      <Button href={buttonLink}>Mehr.</Button>
+      <Button href={buttonLink}>{isFrench ? "Plus." : "Mehr."}</Button>
 
       {!last && (
         <HrBox>

@@ -10,7 +10,8 @@ const SpendenContainer = styled.div`
   margin: 48px 0;
 `;
 
-export const ZurichSpenden = () => {
+export const NationalDonations = (props: { isFrench: boolean }) => {
+  const { isFrench } = props;
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://tamaro.raisenow.com/sp-schweiz/latest/widget.js";
@@ -25,7 +26,9 @@ export const ZurichSpenden = () => {
 
   return (
     <>
-      <H1>Spenden für die SP Queer Zürich</H1>
+      <H1>
+        {isFrench ? "Faire un don au PS Queer" : "Spenden für die SP Queer"}
+      </H1>
       <Container>
         <SpendenContainer className="rnw-widget-container"></SpendenContainer>
       </Container>

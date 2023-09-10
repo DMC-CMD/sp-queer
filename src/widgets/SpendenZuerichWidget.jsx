@@ -2,18 +2,11 @@ import { useEffect } from "react";
 
 export const SpendenZuerichWidget = () => {
   useEffect(() => {
-    // const script = document.createElement("script");
-    // script.src = "https://tamaro.raisenow.com/sp-schweiz/latest/widget.js";
-    // script.async = false;
-
-    // document.body.appendChild(script);
-
-    //@ts-ignore-comment
     window.rnw.tamaro.runWidget(".rnw-widget-container", {
       /***************Settings**************/
 
       // Sprache wählen (de,fr,it)
-      language: "de",
+      language: window.location.hostname === "vote-queer.ch" ? "fr" : "de",
 
       // Kampagnen-ID setzen (Projekt-UID aus Sextant)
       purposeDetails: {
