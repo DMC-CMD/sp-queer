@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
-import { Forderungen } from "./pages/Forderungen";
 import { Footer } from "./components/Footer";
 import { Zurich } from "./pages/Kandidierende/zurich";
 import { Aargau } from "./pages/Kandidierende/Aargau";
@@ -26,10 +25,6 @@ function App() {
       <Navbar isFrench={isFrench} />
       <Routes>
         <Route path="/" element={<Home isFrench={isFrench} />} />
-        <Route
-          path={isFrench ? "/demandes" : "/forderungen"}
-          element={<Forderungen isFrench={isFrench} />}
-        />
         <Route path="/aargau" element={<Aargau />} />
         <Route path="/bern" element={<Bern />} />
         <Route path="/zuerich" element={<Zurich />} />

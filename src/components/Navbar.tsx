@@ -205,7 +205,7 @@ export const Navbar = (props: { isFrench: boolean }) => {
         </RouterLink>
         <Right>
           <Links>
-            <A to={isFrench ? "/demandes" : "/forderungen"}>
+            <A smooth to={isFrench ? "/#demandes" : "/#forderungen"}>
               {isFrench ? "Demandes" : "Forderungen"}
             </A>
             <A smooth to={isFrench ? "/#candidat.e.s" : "/#kandidierende"}>
@@ -241,27 +241,37 @@ export const Navbar = (props: { isFrench: boolean }) => {
               </CloseBox>
 
               <div>
-                <MobileLink smooth to="/">
+                <MobileLink
+                  onClick={() => setShowMobileMenu(false)}
+                  smooth
+                  to="/"
+                >
                   Home
                 </MobileLink>
               </div>
               <div>
-                <MobileLink smooth to={isFrench ? "/demandes" : "/forderungen"}>
+                <MobileLink
+                  to={isFrench ? "/#demandes" : "/#forderungen"}
+                  onClick={() => setShowMobileMenu(false)}
+                  smooth
+                >
                   {isFrench ? "Demandes" : "Forderungen"}
                 </MobileLink>
               </div>
               <div>
                 <MobileLink
+                  to={isFrench ? "/#candidat.e.s" : "/#kandidierende"}
+                  onClick={() => setShowMobileMenu(false)}
                   smooth
-                  to={isFrench ? "candidat.e.s" : "kandidierende"}
                 >
                   {isFrench ? "Candidat.e.s" : "Kandidierende"}
                 </MobileLink>
               </div>
               <div>
                 <MobileLink
-                  smooth
                   to={isFrench ? "/#participer" : "/#mitmachen"}
+                  onClick={() => setShowMobileMenu(false)}
+                  smooth
                 >
                   {isFrench ? "Participer" : "Mitmachen"}
                 </MobileLink>

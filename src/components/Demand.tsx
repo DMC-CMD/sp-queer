@@ -25,15 +25,18 @@ export const Demand = (props: {
   text: string;
   buttonLink: string;
   last?: boolean;
+  first?: boolean;
   isFrench: boolean;
 }) => {
-  const { title, text, buttonLink, last, isFrench } = props;
+  const { title, text, buttonLink, last, isFrench, first } = props;
+  const contentId = isFrench ? "demandes" : "forderungen";
   return (
-    <Content>
+    <Content id={first ? contentId : ""}>
       <H2>{title}</H2>
       <DemandText>{text}</DemandText>
-      <Button href={buttonLink}>{isFrench ? "Plus." : "Mehr."}</Button>
-
+      {
+        // <Button href={buttonLink}>{isFrench ? "Plus." : "Mehr."}</Button>
+      }
       {!last && (
         <HrBox>
           <Hr />
