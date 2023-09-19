@@ -12,7 +12,7 @@ import { NationalDonations } from "./pages/Kandidierende/NationalDonations";
 
 function App() {
   const hostName = window.location.hostname;
-  const isFrench = hostName === "vote-queer.ch";
+  const isFrench = hostName !== "vote-queer.ch";
 
   useEffect(() => {
     if (isFrench) {
