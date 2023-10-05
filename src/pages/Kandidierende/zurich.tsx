@@ -45,6 +45,8 @@ import candidatesType from "../../../types/candidates";
 import BrigitteRoeoesli from "../../media/zurich/andere_Listen/Brigitte-Roeoesli.jpeg";
 import MarcoDenoth from "../../media/zurich/andere_Listen/Marco-Denoth.jpeg";
 import SamuelWenk from "../../media/zurich/andere_Listen/Samuel-Wenk.jpeg";
+import NevinHammad from "../../media/zurich/andere_Listen/Nevin-Hammad.jpeg";
+import AnnaRosenwasser from "../../media/zurich/andere_Listen/Anna-Rosenwasser.jpeg";
 
 const candidatesList27: candidatesType = [
   {
@@ -261,16 +263,29 @@ const candidatesList27: candidatesType = [
 
 const candidatesList2: candidatesType = [
   {
+    name: "Anna Rosenwasser",
+    role: "Autorin, Journalistin",
+    city: "Zürich",
+    img: AnnaRosenwasser,
+  },
+  {
     name: "Brigitte Röösli",
     role: "Pflegefachfrau, Stadträtin, Kantonsrätin",
     city: "Effretikon",
     img: BrigitteRoeoesli,
   },
+
   {
     name: "Marco Denoth",
     role: "Architekt im Nachhaltigen Bauen, Stadtparlamentarier, Unternehmer",
     city: "Zürich",
     img: MarcoDenoth,
+  },
+  {
+    name: "Nevin Nafisa Hammad",
+    role: "Religionswissenschaftlerin, Co-Präsidentin SP Frauen ZH",
+    city: "Zürich",
+    img: NevinHammad,
   },
   {
     name: "Samuel Wenk",

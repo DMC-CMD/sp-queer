@@ -6,6 +6,7 @@ import TamaraFunicello from "../../media/Bern/Tamara-Funicello.jpeg";
 import JanKoebeli from "../../media/Bern/Jan-Koebeli.jpeg";
 import ChristianGremaud from "../../media/Bern/Christian-Gremaud.jpeg";
 import JakubWalczak from "../../media/Bern/Jakub-Walczak.jpeg";
+import SofiaFisch from "../../media/Bern/Sofia-Fisch.jpeg";
 
 const candidates: candidatesType = [
   {
@@ -32,6 +33,12 @@ const candidates: candidatesType = [
     role: "Professioneller Schiedsrichter und Sportmanager",
     city: "Muri bei Bern",
     img: JanKoebeli,
+  },
+  {
+    name: "Sofia Fisch",
+    role: "Advocacy bei Sexuelle Gesundheit Schweiz",
+    city: "Muri bei Bern",
+    img: SofiaFisch,
   },
 ];
 
