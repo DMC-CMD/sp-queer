@@ -35,7 +35,7 @@ const cantons = [
 
   { name: "Luzern", target: "/luzern#", text: "" },
   { name: "Solothurn", target: "/solothurn#", text: "" },
-  { name: "St.Gallen", target: "/stgallen#", text: "" },
+  { name: "St. Gallen", target: "/stgallen#", text: "" },
   { name: "Valais", target: "/valais#", text: "" },
   {
     name: "Zürich",

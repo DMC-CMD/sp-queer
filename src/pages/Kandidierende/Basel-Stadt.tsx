@@ -8,7 +8,7 @@ const candidates: candidatesType = [
   {
     name: "Lisa Mathys",
     role: "Projektleiterin im Bereich Energiewende",
-    city: "Bern",
+    city: "Basel",
     img: LisaMathys,
   },
 ];

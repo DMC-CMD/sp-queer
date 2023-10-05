@@ -31,7 +31,7 @@ const candidates: candidatesType = [
 export const StGallen = () => {
   return (
     <div>
-      <H1>St.Gallen</H1>
+      <H1>St. Gallen</H1>
       <Container2>
         <PersonList>
           {candidates.map((c) => (
