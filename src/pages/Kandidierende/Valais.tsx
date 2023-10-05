@@ -1,22 +1,23 @@
 import { H1, Container2, PersonList } from "../../components/CommonComponents";
 import { Person } from "./Person";
-
-import MiaJenni from "../../media/aargau/Mia_Jenni.jpeg";
 import candidatesType from "../../../types/candidates";
+
+import UrsulaImhof from "../../media/valais/Ursula-Imhof.jpeg";
 
 const candidates: candidatesType = [
   {
-    name: "Mia Jenni",
-    role: "MA, Wissenschaft. Mitarbeiterin, Einwohnerrätin",
-    city: "Rieden",
-    img: MiaJenni,
+    name: "Ursula Imhof",
+    role: "médecin",
+    city: "Sierre",
+    img: UrsulaImhof,
   },
 ];
 
-export const Aargau = () => {
+export const Valais = () => {
   return (
     <div>
-      <H1>Aargau</H1>
+      <H1>Valais</H1>
+
       <Container2>
         <PersonList>
           {candidates.map((c) => (

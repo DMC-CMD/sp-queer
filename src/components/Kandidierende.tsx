@@ -23,13 +23,24 @@ const cantons = [
   {
     name: "Aargau",
     target: "/aargau#",
-    text: "Liste XY",
+    text: "",
   },
-  { name: "Bern", target: "/bern#", text: "Liste XY" },
+  {
+    name: "Basel Stadt",
+    target: "/basel-stadt#",
+    text: "",
+  },
+  { name: "Bern", target: "/bern#", text: "" },
+  { name: "Genève", target: "/geneve#", text: "" },
+
+  { name: "Luzern", target: "/luzern#", text: "" },
+  { name: "Solothurn", target: "/solothurn#", text: "" },
+  { name: "St.Gallen", target: "/stgallen#", text: "" },
+  { name: "Valais", target: "/valais#", text: "" },
   {
     name: "Zürich",
     target: "/zuerich#",
-    text: "Liste 27",
+    text: "Liste 27, weitere Kandidierende",
   },
 ];
 
@@ -45,7 +56,7 @@ export const Kandidierende = (props: { isFrench: boolean }) => {
               <div>
                 <A to={c.target}>{c.name}</A>
               </div>
-              <P>{c.text}</P>
+              {c.text !== "" && <P>{c.text}</P>}
             </CantonBox>
           ))}
         </List>

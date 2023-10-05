@@ -1,50 +1,37 @@
-import {
-  H1,
-  H2,
-  Container2,
-  PersonList,
-} from "../../components/CommonComponents";
+import { H1, Container2, PersonList } from "../../components/CommonComponents";
 import { Person } from "./Person";
 import candidatesType from "../../../types/candidates";
 
-import AnnaGraff from "../../media/zurich/01_Anna_Graff.jpg";
+import TamaraFunicello from "../../media/Bern/Tamara-Funicello.jpeg";
+import JanKoebeli from "../../media/Bern/Jan-Koebeli.jpeg";
+import ChristianGremaud from "../../media/Bern/Christian-Gremaud.jpeg";
+import JakubWalczak from "../../media/Bern/Jakub-Walczak.jpeg";
 
 const candidates: candidatesType = [
   {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
+    name: "Tamara Funicello",
+    role: "Politikerin, Aktivistin, politische Beraterin",
+    city: "Bern",
+    img: TamaraFunicello,
   },
   {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
+    name: "Christian Gremaud",
+    role: "Kommunizierend",
+    city: "Bern",
+    img: ChristianGremaud,
+  },
+
+  {
+    name: "Jakub Walczak",
+    role: "Informatik-Lernende*r",
+    city: "Erlach",
+    img: JakubWalczak,
   },
   {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
-  },
-  {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
-  },
-  {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
-  },
-  {
-    name: "Anna Graff",
-    role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
-    city: "Zürich",
-    img: AnnaGraff,
+    name: "Jan Köbeli",
+    role: "Professioneller Schiedsrichter und Sportmanager",
+    city: "Muri bei Bern",
+    img: JanKoebeli,
   },
 ];
 
@@ -52,7 +39,7 @@ export const Bern = () => {
   return (
     <div>
       <H1>Bern</H1>
-      <H2>Liste XY</H2>
+
       <Container2>
         <PersonList>
           {candidates.map((c) => (

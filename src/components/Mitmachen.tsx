@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import { H1, H2, Container, Button } from "./CommonComponents";
+import { H1, H2, Container as Cont, Button } from "./CommonComponents";
 import { Link } from "react-router-dom";
 
+const Container = styled(Cont)`
+  margin-bottom: 168px;
+`;
 const ButtonBox = styled.div`
   display: flex;
   justify-content: center;

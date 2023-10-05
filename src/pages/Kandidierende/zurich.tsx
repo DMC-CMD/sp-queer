@@ -1,11 +1,9 @@
-import {
-  Container2,
-  H1,
-  H2,
-  PersonList,
-} from "../../components/CommonComponents";
+import { Container2, H1, PersonList } from "../../components/CommonComponents";
+import { useState } from "react";
+import styled from "styled-components";
 import { Person } from "./Person";
 
+//List 27
 import AnnaGraff from "../../media/zurich/01_Anna_Graff.jpg";
 import MaxKranich from "../../media/zurich/02_Max_Kranich.jpg";
 import RayBelleDjuric from "../../media/zurich/03_Ray_Belle_Djuric.jpg";
@@ -43,7 +41,12 @@ import GiuliaHaller from "../../media/zurich/34_Giulia_Haller.jpg";
 import MartinNaef from "../../media/zurich/35_Martin_Naef.jpg";
 import candidatesType from "../../../types/candidates";
 
-const candidates: candidatesType = [
+//List 2
+import BrigitteRoeoesli from "../../media/zurich/andere_Listen/Brigitte-Roeoesli.jpeg";
+import MarcoDenoth from "../../media/zurich/andere_Listen/Marco-Denoth.jpeg";
+import SamuelWenk from "../../media/zurich/andere_Listen/Samuel-Wenk.jpeg";
+
+const candidatesList27: candidatesType = [
   {
     name: "Anna Graff",
     role: "Biologin, Sprachwissenschaftlerin, Gemeinderätin",
@@ -256,17 +259,80 @@ const candidates: candidatesType = [
   },
 ];
 
+const candidatesList2: candidatesType = [
+  {
+    name: "Brigitte Röösli",
+    role: "Pflegefachfrau, Stadträtin, Kantonsrätin",
+    city: "Effretikon",
+    img: BrigitteRoeoesli,
+  },
+  {
+    name: "Marco Denoth",
+    role: "Architekt im Nachhaltigen Bauen, Stadtparlamentarier, Unternehmer",
+    city: "Zürich",
+    img: MarcoDenoth,
+  },
+  {
+    name: "Samuel Wenk",
+    role: "Jurist",
+    city: "Affoltern",
+    img: SamuelWenk,
+  },
+];
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+const SelectionBox = styled.div`
+  display: flex;
+  margin-bottom: 36px;
+  gap: 24px;
+`;
+
+interface Props {
+  isActive: boolean;
+}
+const Selection = styled.div<Props>`
+  font-size: 34px;
+  padding-bottom: 8px;
+  border-bottom: ${(p) =>
+    p.isActive ? "2px solid white" : "2px solid rgba(0, 0, 0, 0)"};
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+  }
+`;
+
 export const Zurich = () => {
+  const [List27Selected, setList27Selected] = useState(true);
+
   return (
     <div>
       <H1>Zürich</H1>
-      <H2>Liste 27</H2>
+
+      <Center>
+        <SelectionBox>
+          <Selection
+            isActive={List27Selected}
+            onClick={() => setList27Selected(true)}
+          >
+            Liste 27
+          </Selection>
+          <Selection
+            isActive={!List27Selected}
+            onClick={() => setList27Selected(false)}
+          >
+            Liste 2
+          </Selection>
+        </SelectionBox>
+      </Center>
 
       <Container2>
         <PersonList>
-          {candidates.map((c) => (
-            <Person data={c} />
-          ))}
+          {List27Selected
+            ? candidatesList27.map((c) => <Person data={c} />)
+            : candidatesList2.map((c) => <Person data={c} />)}
         </PersonList>
       </Container2>
     </div>

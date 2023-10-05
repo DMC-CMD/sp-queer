@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "./CommonComponents";
 
 const Hr = styled.hr`
-  margin-top: 188px;
+  margin-top: 80px;
   border: 1px solid white;
 `;
 const Content = styled.div`

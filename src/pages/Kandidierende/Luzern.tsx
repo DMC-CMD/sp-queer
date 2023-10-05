@@ -1,19 +1,19 @@
 import { H1, Container2, PersonList } from "../../components/CommonComponents";
 import { Person } from "./Person";
 
-import MiaJenni from "../../media/aargau/Mia_Jenni.jpeg";
+import MarcelBudmiger from "../../media/luzern/Marcel-Budmiger.jpeg";
 import candidatesType from "../../../types/candidates";
 
 const candidates: candidatesType = [
   {
-    name: "Mia Jenni",
-    role: "MA, Wissenschaft. Mitarbeiterin, Einwohnerrätin",
-    city: "Rieden",
-    img: MiaJenni,
+    name: "Marcel Budmiger",
+    role: "Geschäftsleiter Luzerner Gewerkschaftsbund",
+    city: "Luzern",
+    img: MarcelBudmiger,
   },
 ];
 
-export const Aargau = () => {
+export const Luzern = () => {
   return (
     <div>
       <H1>Aargau</H1>

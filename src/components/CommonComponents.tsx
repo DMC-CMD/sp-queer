@@ -10,17 +10,19 @@ export const Container = styled.div`
 
 export const H1 = styled.h1`
   font-size: 60px;
-  margin: 90px 0;
+  margin: 40px 0;
   text-align: center;
+  overflow-wrap: break-word;
 
   @media (max-width: 600px) {
-    margin: 120px 0;
+    margin: 120px 0 55px;
   }
 `;
 
 export const H2 = styled.h2`
   font-size: 40px;
   text-align: center;
+  overflow-wrap: break-word;
 `;
 
 export const Link = styled(HashLink)`
