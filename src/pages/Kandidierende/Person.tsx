@@ -35,13 +35,13 @@ type candidate = {
   img: string;
 };
 
-export const Person = (props: { data: candidate }) => {
-  let { data } = props;
+export const Person = (props: { data: candidate; number?: number }) => {
+  let { data, number } = props;
 
   return (
     <Box>
       <Image src={data.img} />
-      <Name>{data.name}</Name>
+      <Name>{number ? `${number}. ${data.name}` : data.name}</Name>
       <Role>{data.role}</Role>
       <City>{data.city}</City>
     </Box>

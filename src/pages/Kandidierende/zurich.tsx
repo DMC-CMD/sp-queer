@@ -263,32 +263,32 @@ const candidatesList27: candidatesType = [
 
 const candidatesList2: candidatesType = [
   {
-    name: "Anna Rosenwasser",
-    role: "Autorin, Journalistin",
-    city: "Zürich",
-    img: AnnaRosenwasser,
-  },
-  {
-    name: "Brigitte Röösli",
+    name: "13. Brigitte Röösli",
     role: "Pflegefachfrau, Stadträtin, Kantonsrätin",
     city: "Effretikon",
     img: BrigitteRoeoesli,
   },
-
   {
-    name: "Marco Denoth",
+    name: "14. Marco Denoth",
     role: "Architekt im Nachhaltigen Bauen, Stadtparlamentarier, Unternehmer",
     city: "Zürich",
     img: MarcoDenoth,
   },
   {
-    name: "Nevin Nafisa Hammad",
+    name: "18. Nevin Nafisa Hammad",
     role: "Religionswissenschaftlerin, Co-Präsidentin SP Frauen ZH",
     city: "Zürich",
     img: NevinHammad,
   },
   {
-    name: "Samuel Wenk",
+    name: "20. Anna Rosenwasser",
+    role: "Autorin, Journalistin",
+    city: "Zürich",
+    img: AnnaRosenwasser,
+  },
+
+  {
+    name: "21. Samuel Wenk",
     role: "Jurist",
     city: "Affoltern",
     img: SamuelWenk,
@@ -346,7 +346,9 @@ export const Zurich = () => {
       <Container2>
         <PersonList>
           {List27Selected
-            ? candidatesList27.map((c) => <Person data={c} />)
+            ? candidatesList27.map((c, ind) => (
+                <Person data={c} number={ind + 1} />
+              ))
             : candidatesList2.map((c) => <Person data={c} />)}
         </PersonList>
       </Container2>
