@@ -7,6 +7,7 @@ import candidatesType from "../../../types/candidates";
 const candidates: candidatesType = [
   {
     name: "Florian Schweri",
+    list: "Liste 8, Position 9",
     role: "Juriste - Conseiller municipal suppléant Ville de Genève",
     city: "Genève",
     img: FlorianSchweri,

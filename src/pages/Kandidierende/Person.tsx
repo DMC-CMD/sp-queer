@@ -13,6 +13,10 @@ const Name = styled.h2`
   max-width: 400px;
   margin: 18px 0;
 `;
+const List = styled.p`
+  font-size: 20px;
+  margin: 8px 0 18px;
+`;
 const Role = styled.p`
   width: 100%;
   max-width: 400px;
@@ -30,6 +34,7 @@ const City = styled.p`
 
 type candidate = {
   name: string;
+  list?: string;
   role: string;
   city: string;
   img: string;
@@ -41,7 +46,9 @@ export const Person = (props: { data: candidate; number?: number }) => {
   return (
     <Box>
       <Image src={data.img} />
+      {data.list && <List>{data.list}</List>}
       <Name>{number ? `${number}. ${data.name}` : data.name}</Name>
+
       <Role>{data.role}</Role>
       <City>{data.city}</City>
     </Box>

@@ -11,12 +11,14 @@ import SofiaFisch from "../../media/Bern/Sofia-Fisch.jpeg";
 const candidates: candidatesType = [
   {
     name: "Tamara Funicello",
+    list: "Liste 4, Platz 3",
     role: "Politikerin, Aktivistin, politische Beraterin",
     city: "Bern",
     img: TamaraFunicello,
   },
   {
     name: "Christian Gremaud",
+    list: "Liste 3, Platz 18",
     role: "Kommunizierend",
     city: "Bern",
     img: ChristianGremaud,
@@ -24,18 +26,21 @@ const candidates: candidatesType = [
 
   {
     name: "Jakub Walczak",
+    list: "Liste 3, Platz 2",
     role: "Informatik-Lernende*r",
     city: "Erlach",
     img: JakubWalczak,
   },
   {
     name: "Jan Köbeli",
+    list: "Liste 3, Platz 14",
     role: "Professioneller Schiedsrichter und Sportmanager",
     city: "Muri bei Bern",
     img: JanKoebeli,
   },
   {
     name: "Sofia Fisch",
+    list: "Liste 4, Platz 5",
     role: "Advocacy bei Sexuelle Gesundheit Schweiz",
     city: "Muri bei Bern",
     img: SofiaFisch,

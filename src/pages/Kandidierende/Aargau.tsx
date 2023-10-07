@@ -7,6 +7,7 @@ import candidatesType from "../../../types/candidates";
 const candidates: candidatesType = [
   {
     name: "Mia Jenni",
+    list: "Liste 2a, Platz 7",
     role: "MA, Wissenschaft. Mitarbeiterin, Einwohnerrätin",
     city: "Rieden",
     img: MiaJenni,

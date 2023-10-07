@@ -7,6 +7,7 @@ import LisaMathys from "../../media/basel-stadt/Lisa-Mathys.jpeg";
 const candidates: candidatesType = [
   {
     name: "Lisa Mathys",
+    list: "Liste 5, Platz 3",
     role: "Projektleiterin im Bereich Energiewende",
     city: "Basel",
     img: LisaMathys,

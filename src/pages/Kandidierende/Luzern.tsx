@@ -7,6 +7,7 @@ import candidatesType from "../../../types/candidates";
 const candidates: candidatesType = [
   {
     name: "Marcel Budmiger",
+    list: "Liste 2, Platz 1",
     role: "Geschäftsleiter Luzerner Gewerkschaftsbund",
     city: "Luzern",
     img: MarcelBudmiger,
@@ -16,7 +17,7 @@ const candidates: candidatesType = [
 export const Luzern = () => {
   return (
     <div>
-      <H1>Aargau</H1>
+      <H1>Luzern</H1>
       <Container2>
         <PersonList>
           {candidates.map((c) => (
